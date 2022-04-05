@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin:0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(0deg,
+    rgb(17, 51, 161) 0%,
+    rgb(136, 34, 195) 100%);
+    font-family: "Dosis", sans-serif;
+}
+
+
+.navbar {
+    width: 300px;
+    height: 100%;
+    background-color: #262626;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% 0 0 60%;
+    transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.change {
+    right: 0;
+}
+
+.hamburger-menu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: chocolate;
+    transition: all 0.8s;
+}
+
+.change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.nav-list {
+    text-align: right;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 22px;
+    color: #eee;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 3px 0;
+}
+.nav-link::before,
+.nav-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: chocolate;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.nav-link::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.nav-link::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+#registrationForm{
+
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 300px;
+    background-color: #999;
+    gap: 5px;
+}
+
+#registrationForm > input{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#registrationForm > label{
+    /* margin-top: 10px; */
+}
+
+button {
+    margin-top: 25px;
+    padding: 10px;
+}
+#registrationForm1 {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 250px;
+}
+#indextable{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 250px;
+}
+table, th, td {
+    border: 1px solid;
+}

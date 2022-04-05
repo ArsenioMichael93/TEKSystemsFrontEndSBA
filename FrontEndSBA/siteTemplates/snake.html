@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Speed Snake</title>
+    <style>
+        body{
+            margin:0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+/*            top: 10px;
+            left:  2200px;*/
+            overflow: hidden;
+            height: 100vh;
+            background: linear-gradient(0deg,
+            rgb(17, 51, 161) 0%,
+            rgb(136, 34, 195) 100%);
+        }
+        canvas{
+            box-shadow: black 20px 10px 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+    </div>
+
+    <ul class="nav-list">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="./dino.html" class="nav-link">Dino Run</a>
+        </li>
+        <li class="nav-item">
+            <a href="./flappyBird.html" class="nav-link">Flappy Bird</a>
+        </li>
+        <li class="nav-item">
+            <a href="./snake.html" class="nav-link">Snake</a>
+        </li>
+        <li class="nav-item">
+            <a href="./userLogin.html" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item">
+            <a href="./questionair.html" class="nav-link">Contact Us</a>
+        </li>
+        <script src="../js/script.js"></script>
+    </ul>
+    </div>
+<h1>Snake</h1>
+<canvas id="snakegame" width="400" height="400">
+
+
+    <script src="../js/snake.js"></script>
+
+</body>
+</html>
